@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KITT</title>
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" type="text/css" href="menu/CircularContentCarousel/css/style.css" />
+<link rel="stylesheet" type="text/css" href="menu/CircularContentCarousel/css/jquery.jscrollpane.css" media="all" />
+<link rel="stylesheet" type="text/css" href="loader.css" />
+<link rel="stylesheet" type="text/css" href="onoff.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="menu/CircularContentCarousel/js/jquery.easing.1.3.js"></script>
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="menu/CircularContentCarousel/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="menu/CircularContentCarousel/js/jquery.contentcarousel.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+
+<script type="text/javascript" src="speed/xcanvas.js"></script>
+<script type="text/javascript" src="speed/tbe.js"></script>
+<script type="text/javascript" src="speed/digitaldisplay.js"></script>
+<script type="text/javascript" src="speed/speedometer.js"></script>
+<script type="text/javascript" src="speed/themes/default.js"></script>
+<script type="text/javascript" src="speed/example.js"></script>
+<script type="text/javascript" src="speed/controls.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript" src="map.js"></script>
+
+</head>
+
+<body background="fundo.jpg", style="background-attachment:fixed; background-position:center center; background-repeat:no-repeat; background-size:contain;">
+
+<div id="menubox">
+<div id="loader"> <!-- loader gif-->
+	<img src="loader.gif" style="width:55px; heigth:55px;"/>
+</div>
+<div id="fountainTextG0"> <!-- fountain init menu-->
+	<div id="fountainTextG_1" class="fountainTextG">
+	C</div>
+	<div id="fountainTextG_2" class="fountainTextG">
+	a</div>
+	<div id="fountainTextG_3" class="fountainTextG">
+	r</div>
+	<div id="fountainTextG_4" class="fountainTextG">
+	r</div>
+	<div id="fountainTextG_5" class="fountainTextG">
+	e</div>
+	<div id="fountainTextG_6" class="fountainTextG">
+	g</div>
+	<div id="fountainTextG_7" class="fountainTextG">
+	u</div>
+	<div id="fountainTextG_8" class="fountainTextG">
+	e</div>
+	<div id="fountainTextG_9" class="fountainTextG">
+	&nbsp;
+	</div>
+	<div id="fountainTextG_10" class="fountainTextG">
+	O</div>
+	<div id="fountainTextG_11" class="fountainTextG">
+	K</div>
+	<div id="fountainTextG_12" class="fountainTextG">
+	&nbsp;
+	</div>
+	<div id="fountainTextG_13" class="fountainTextG">
+	p</div>
+	<div id="fountainTextG_14" class="fountainTextG">
+	a</div>
+	<div id="fountainTextG_15" class="fountainTextG">
+	r</div>
+	<div id="fountainTextG_16" class="fountainTextG">
+	a</div>
+	<div id="fountainTextG_17" class="fountainTextG">
+	&nbsp;</div>
+	<div id="fountainTextG_18" class="fountainTextG">
+	I</div>
+	<div id="fountainTextG_19" class="fountainTextG">
+	n</div>
+	<div id="fountainTextG_20" class="fountainTextG">
+	i</div>
+	<div id="fountainTextG_21" class="fountainTextG">
+	c</div>
+	<div id="fountainTextG_22" class="fountainTextG">
+	i</div>
+	<div id="fountainTextG_23" class="fountainTextG">
+	a</div>
+	<div id="fountainTextG_24" class="fountainTextG">
+	r</div>
+</div>
+<div class="container"> <!-- ca-container  KITT menu 0 option 0-->
+	<div id="ca-container">
+		<div class="ca-wrapper">
+			<div class="ca-item" id="ca-item-1">
+				<div class="ca-item-main">
+					<a>Encontrar<br>Est.Gasolina</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-2">
+				<div class="ca-item-main">
+					<a>Sistema de<br>Segurança</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-3">
+				<div class="ca-item-main">
+					<a>Distância de<br>Segurança</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-4">
+				<div class="ca-item-main">
+					<a>Opções</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-5">
+				<div class="ca-item-main">
+					<a>Ajuda</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-6">
+				<div class="ca-item-main">
+					<a>Sair</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="fountainTextG1"> <!-- fountain KITT menu-->
+	<div id="fountainTextG_1" class="fountainTextG">
+	K</div>
+	<div id="fountainTextG_2" class="fountainTextG">
+	I</div>
+	<div id="fountainTextG_3" class="fountainTextG">
+	T</div>
+	<div id="fountainTextG_4" class="fountainTextG">
+	T</div>
+</div>
+<div class="container"> <!--ca-container2 Security System menu 1-->
+	<div id="ca-container2">
+		<div class="ca-wrapper">
+			<div class="ca-item" id="ca-item-1">
+				<div class="ca-item-main">
+					<a>Chamar<br>Ambulância</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-2">
+				<div class="ca-item-main">
+					<a>Chamar<br>Policia</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-3">
+				<div class="ca-item-main">
+					<a>Chamar<br>Reboque</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-41">
+				<div class="ca-item-main">
+					<a>Chamar<br>Assistência</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-5">
+				<div class="ca-item-main">
+					<a>Ajuda</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-6">
+				<div class="ca-item-main">
+					<a>Sair</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="fountainTextG2"> <!-- fountain Security System menu-->
+	<div id="fountainTextG_1" class="fountainTextG">
+	S</div>
+	<div id="fountainTextG_2" class="fountainTextG">
+	i</div>
+	<div id="fountainTextG_3" class="fountainTextG">
+	s</div>
+	<div id="fountainTextG_4" class="fountainTextG">
+	t</div>
+	<div id="fountainTextG_5" class="fountainTextG">
+	e</div>
+	<div id="fountainTextG_6" class="fountainTextG">
+	m</div>
+	<div id="fountainTextG_7" class="fountainTextG">
+	a</div>
+	<div id="fountainTextG_8" class="fountainTextG">
+	&nbsp;</div>
+	<div id="fountainTextG_9" class="fountainTextG">
+	d</div>
+	<div id="fountainTextG_10" class="fountainTextG">
+	e</div>
+	<div id="fountainTextG_11" class="fountainTextG">
+	&nbsp;</div>
+	<div id="fountainTextG_12" class="fountainTextG">
+	S</div>
+	<div id="fountainTextG_13" class="fountainTextG">
+	e</div>
+	<div id="fountainTextG_14" class="fountainTextG">
+	g</div>
+	<div id="fountainTextG_15" class="fountainTextG">
+	u</div>
+	<div id="fountainTextG_16" class="fountainTextG">
+	r</div>
+	<div id="fountainTextG_17" class="fountainTextG">
+	a</div>
+	<div id="fountainTextG_18" class="fountainTextG">
+	n</div>
+	<div id="fountainTextG_19" class="fountainTextG">
+	ç</div>
+	<div id="fountainTextG_20" class="fountainTextG">
+	a</div>
+</div>
+<div class="container"> <!--ca-container3 Safety Distance menu 2-->
+	<div id="ca-container3">
+		<div class="ca-wrapper">
+			<div class="ca-item" id="ca-item-1">
+				<div class="ca-item-main">
+					<div class="onoffswitch" id="safedist">
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="safedistswitch" checked>
+						<label class="onoffswitch-label" for="myonoffswitch">
+							<div class="onoffswitch-inner"></div>
+							<div class="onoffswitch-switch"></div>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-21">
+				<div class="ca-item-main">
+					<a>Som</a>
+					<div class="onoffswitch" id="safedistsound">
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="safedistsoundswitch" checked>
+						<label class="onoffswitch-label" for="myonoffswitch" id="safedistsound2">
+							<div class="onoffswitch-inner"></div>
+							<div class="onoffswitch-switch"></div>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-31">
+				<div class="ca-item-main">
+					<a>Ajuda</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-42">
+				<div class="ca-item-main">
+					<a>Sair</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="fountainTextG3"> <!-- fountain Safety Distance menu-->
+	<div id="fountainTextG_1" class="fountainTextG">
+	D</div>
+	<div id="fountainTextG_2" class="fountainTextG">
+	i</div>
+	<div id="fountainTextG_3" class="fountainTextG">
+	s</div>
+	<div id="fountainTextG_4" class="fountainTextG">
+	t</div>
+	<div id="fountainTextG_5" class="fountainTextG">
+	â</div>
+	<div id="fountainTextG_6" class="fountainTextG">
+	n</div>
+	<div id="fountainTextG_7" class="fountainTextG">
+	c</div>
+	<div id="fountainTextG_8" class="fountainTextG">
+	i</div>
+	<div id="fountainTextG_9" class="fountainTextG">
+	a</div>
+	<div id="fountainTextG_10" class="fountainTextG">
+	&nbsp;</div>
+	<div id="fountainTextG_11" class="fountainTextG">
+	d</div>
+	<div id="fountainTextG_12" class="fountainTextG">
+	e</div>
+	<div id="fountainTextG_13" class="fountainTextG">
+	&nbsp;</div>
+	<div id="fountainTextG_14" class="fountainTextG">
+	S</div>
+	<div id="fountainTextG_15" class="fountainTextG">
+	e</div>
+	<div id="fountainTextG_16" class="fountainTextG">
+	g</div>
+	<div id="fountainTextG_17" class="fountainTextG">
+	u</div>
+	<div id="fountainTextG_18" class="fountainTextG">
+	r</div>
+	<div id="fountainTextG_19" class="fountainTextG">
+	a</div>
+	<div id="fountainTextG_20" class="fountainTextG">
+	n</div>
+	<div id="fountainTextG_21" class="fountainTextG">
+	ç</div>
+	<div id="fountainTextG_22" class="fountainTextG">
+	a</div>
+</div>
+<div class="container"> <!--ca-container4 Options menu 3-->
+	<div id="ca-container4">
+		<div class="ca-wrapper">
+			<div class="ca-item" id="ca-item-1">
+				<div class="ca-item-main">
+					<a>Notificações</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-2">
+				<div class="ca-item-main">
+					<a>Icones</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-3">
+				<div class="ca-item-main">
+					<a>Ajuda</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-4">
+				<div class="ca-item-main">
+					<a>Sair</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="fountainTextG4"> <!-- fountain Options menu-->
+	<div id="fountainTextG_1" class="fountainTextG">
+	O</div>
+	<div id="fountainTextG_2" class="fountainTextG">
+	p</div>
+	<div id="fountainTextG_3" class="fountainTextG">
+	ç</div>
+	<div id="fountainTextG_4" class="fountainTextG">
+	õ</div>
+	<div id="fountainTextG_5" class="fountainTextG">
+	e</div>
+	<div id="fountainTextG_6" class="fountainTextG">
+	s</div>
+</div>
+<div class="container"> <!--ca-container5 Help menu 4-->
+	<div id="ca-container5">
+		<div class="ca-wrapper">
+			<div class="ca-item" id="ca-item-1">
+				<div class="ca-item-main">
+					<a>Notifications</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-2">
+				<div class="ca-item-main">
+					<a>Icons</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-3">
+				<div class="ca-item-main">
+					<a>Help</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-4">
+				<div class="ca-item-main">
+					<a>Exit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="fountainTextG5"> <!-- fountain Help menu-->
+	<div id="fountainTextG_1" class="fountainTextG">
+	A</div>
+	<div id="fountainTextG_2" class="fountainTextG">
+	j</div>
+	<div id="fountainTextG_3" class="fountainTextG">
+	u</div>
+	<div id="fountainTextG_4" class="fountainTextG">
+	d</div>
+	<div id="fountainTextG_5" class="fountainTextG">
+	a</div>
+</div>
+<div class="container"> <!--ca-container6 Find Gas Station menu 5-->
+	<div id="ca-container6">
+		<div class="ca-wrapper">
+			<div class="ca-item" id="ca-item-1">
+				<div class="ca-item-main">
+					<a>Encontrar<br>por ZIP</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-2">
+				<div class="ca-item-main">
+					<a style="font-size:12px;">Encontrar<br>mais próxima</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-3">
+				<div class="ca-item-main">
+					<a>Ajuda</a>
+				</div>
+			</div>
+			<div class="ca-item" id="ca-item-4">
+				<div class="ca-item-main">
+					<a>Sair</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="fountainTextG6"> <!-- fountain Find Gas Station menu-->
+	<div id="fountainTextG_1" class="fountainTextG">
+	E</div>
+	<div id="fountainTextG_2" class="fountainTextG">
+	n</div>
+	<div id="fountainTextG_3" class="fountainTextG">
+	c</div>
+	<div id="fountainTextG_4" class="fountainTextG">
+	o</div>
+	<div id="fountainTextG_5" class="fountainTextG">
+	n</div>
+	<div id="fountainTextG_6" class="fountainTextG">
+	t</div>
+	<div id="fountainTextG_7" class="fountainTextG">
+	r</div>
+	<div id="fountainTextG_8" class="fountainTextG">
+	a</div>
+	<div id="fountainTextG_9" class="fountainTextG">
+	r</div>
+	<div id="fountainTextG_10" class="fountainTextG">
+	&nbsp;</div>
+	<div id="fountainTextG_11" class="fountainTextG">
+	E</div>
+	<div id="fountainTextG_12" class="fountainTextG">
+	s</div>
+	<div id="fountainTextG_13" class="fountainTextG">
+	t</div>
+	<div id="fountainTextG_14" class="fountainTextG">
+	.</div>
+	<div id="fountainTextG_15" class="fountainTextG">
+	G</div>
+	<div id="fountainTextG_16" class="fountainTextG">
+	a</div>
+	<div id="fountainTextG_17" class="fountainTextG">
+	s</div>
+	<div id="fountainTextG_18" class="fountainTextG">
+	o</div>
+	<div id="fountainTextG_19" class="fountainTextG">
+	l</div>
+	<div id="fountainTextG_20" class="fountainTextG">
+	i</div>
+	<div id="fountainTextG_21" class="fountainTextG">
+	n</div>
+	<div id="fountainTextG_22" class="fountainTextG">
+	a</div>
+</div>
+</div>
+
+<div class="selectedBox" id="selectedBox" style="margin:-47px 0px 0px 947px;"></div>
+
+<div id="callPolice">
+	<h2>Policia está a caminho</h2>
+</div>
+<div id="callTrailer">
+	<h2>Reboque está a caminho</h2>
+</div>
+<div id="callAssistance">
+	<h2>Assistência está a caminho</h2>
+</div>
+<div id="callAmbulance">
+	<h2>Ambulância está a caminho</h2>
+</div>
+<div id="getLocal">
+	<h2>A obter a localização</h2>
+</div>
+<div id="safeWarning">
+	<h2>Mantenha a distância de segurança!</h2>
+</div>
+
+<div id="container_background">
+</div>
+<div id="container_background2">
+</div>
+
+<a class="round-button"  id="ok" style="margin: 320px 0px 0px 765px;" onclick="okFunction()"></a>
+<a class="round-button" id="undo" style="margin: 320px 0px 0px 542px;" onclick="undoFunction()"></a>
+<a class="round-button" id="button-left" style="margin: 266px 0px 0px 553px;"></a>
+<a class="round-button" id="button-right" style="margin: 266px 0px 0px 751px;"></a>
+<div id="fuelLevel"><img src="gas.png"/></div>
+<div id="fullGas"><img src="fullgas.png"/></div>
+<div id="lights"><img src="light.png"/></div>
+<div id="warning"><img style="height:55px;" src="warning3.png"/></div>
+<div id="clock">
+	<script type="text/javascript" src="http://localtimes.info/clock.php?&cp1_Hex=27c239&cp2_Hex=FFFFFF&cp3_Hex=ffffff&fwdt=128&ham=0&hbg=1&hfg=0&sid=0&mon=0&wek=0&wkf=0&sep=0&widget_number=1021"></script>
+</div>
+
+<div id="speedometer"></div>
+<div id="controls" style="visibility:hidden;" >
+    <input type="button" id="update" value="start" /><br/>
+    <input type="text" id="maxvalue" value="200" />
+    <input type="button" id="rescale" value="rescale" /><br />
+    <input type="radio" name="mode" id="incremental"/> incremental
+    <input type="radio" name="mode" id="random" checked="checked"/> random
+</div>
+
+<div id="escapingBallG">
+	<div id="escapingBall_1" class="escapingBallG">
+	</div>
+</div>
+
+<audio style="display: none;" id="notification" preload src="beepbeep.mp3"></audio>
+
+    <div id="map-canvas" style="margin: -277px 0px 0px 836px; position: absolute; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0px); opacity:0.8; visibility: hidden;"></div>
+    &nbsp;
+    <div id="warnings_panel"></div>
+
+
+
+
+<script type='text/javascript' > 
+  var auxi=1;
+  var menu=0;
+  var n_options=0;
+  var safedist=0;
+  var safedistsound=1;
+  var selectedBox = $('.selectedBox');
+  var option= new Array();
+  option[0] = 0;
+  option[1] = 0;
+  option[2] = 0;
+  option[3] = 0;
+  option[4] = 0;
+  option[5] = 0;
+  option[6] = 0;
+  var exit = new Array();
+  exit[0] = 0;
+  exit[1] = 0;
+  exit[2] = 0;
+  exit[3] = 0;
+  exit[4] = 0;
+  exit[5] = 0;
+  exit[6] = 0;
+  
+  var map;
+  var source, desti;
+  var directionsDisplay;
+  var directionsService;
+  var stepDisplay;
+  var markerArray = [];
+  var latitude, longitude;
+  var gas = [[38.732728,-9.279327],
+			 [38.732728,-9.279327],
+			 [38.740227,-9.274864],
+			 [38.71505,-9.284563],
+			 [38.715787,-9.263792]]; //5
+  
+  $(document).keydown( function(eventObject) {
+	if(eventObject.which==38) {//up arrow
+		$("#ok").click();//emulates click on ok button
+	}
+	else if(eventObject.which==40) {//right arrow
+		$("#undo").click();//emulates click on undo button
+	}
+ });
+
+</script>
+
+<script>
+$('#ca-container').contentcarousel();
+$('#ca-container2').contentcarousel();
+$('#ca-container3').contentcarousel();
+$('#ca-container4').contentcarousel();
+$('#ca-container5').contentcarousel();
+$('#ca-container6').contentcarousel();
+</script>
+
+<script type="text/javascript">
+          var speedometer;
+          // Explicit onready listener for modern browsers. If you use a JS framework,
+          // you should replace this code with your toolkit's "onReady" helpers (e.g.
+          // $(document).ready() on jQuery, Event.observe('dom:loaded') on prototype,
+          // and so on.
+          document.addEventListener ("DOMContentLoaded", function() {
+            document.removeEventListener ("DOMContentLoaded", arguments.callee, false);
+
+            // Check out configuration and API on GitHub Wiki:
+            // http://wiki.github.com/vjt/canvas-speedometer
+            speedometer = new Speedometer ('speedometer', {theme: 'default'});
+            speedometer.draw ();
+            speedometer.addEventListener ('speedometer:animateend', function () {
+              controls.start ();
+            });
+			
+            var controls = new Controls ();
+            controls.start ();
+          }, false);
+</script>
+
+
+</body>
+</html>
