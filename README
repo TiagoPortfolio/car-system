@@ -1,7 +1,5 @@
-Intelligent Car System PROTOTYPE project.
+# Intelligent Car System PROTOTYPE
 
-Implemented in HTML5, CSS3, Javascript with Jquery. Best use in 1366x768 screen resolution, compatible with all resolutions/browsers in the final product.
+This project tries to simulate an intelligent car system implemented in HTML5, CSS3, Javascript with Jquery within the scale of a real car windshield.
 
-*********************************************************************************************************
-*To see this project download ZIP and open "project.html" file with a browser (Google Chrome preferable)*
-*********************************************************************************************************
+* [View Demo](https://tiagoportfolio.github.io/carkitt "Smartwatch Demo") (Google Chrome preferable)
