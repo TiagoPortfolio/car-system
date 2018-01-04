@@ -2,57 +2,86 @@
 background-color: white;
 border-radius:25px;
 position: absolute;
-margin: -50px 0px 0px 976px;
+margin: 435px 0px 0px 975px;
 height: 55px;
 width: 55px;
 opacity:0.7;
 visibility:visible;
 }
 
+.container-fluid {
+  height: 570px;
+  position: relative;
+}
+
+#responsive {
+  height: 643px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -315px;
+  margin-left: -676px;
+}
+
 #fountainTextG0{
 width:300px;
-margin: 273px 0px 0px 865px;
+margin: 495px 0px 0px 900px;
 visibility: visible;
+position: absolute;
 }
 
 #fountainTextG1{
 width:300px;
-margin: 2px 0px 0px 975px;
+margin: 500px 0px 0px 967px;
 visibility: hidden;
 position: absolute;
 }
 
 #fountainTextG2{
 width:300px;
-margin: 2px 0px 0px 872px;
+margin: 500px 0px 0px 900px;
 visibility: hidden;
 position: absolute;
 }
 
 #fountainTextG3{
 width:300px;
-margin: 2px 0px 0px 865px;
+margin: 500px 0px 0px 910px;
 visibility: hidden;
 position: absolute;
 }
 
 #fountainTextG4{
 width:300px;
-margin: 2px 0px 0px 950px;
+margin: 500px 0px 0px 950px;
 visibility: hidden;
 position: absolute;
 }
 
 #fountainTextG5{
 width:300px;
-margin: 2px 0px 0px 960px;
+margin: 500px 0px 0px 960px;
 visibility: hidden;
 position: absolute;
 }
 
 #fountainTextG6{
 width:300px;
-margin: 2px 0px 0px 868px;
+margin: 500px 0px 0px 895px;
+visibility: hidden;
+position: absolute;
+}
+
+#fountainTextG7{
+width:300px;
+margin: 500px 0px 0px 957px;
+visibility: hidden;
+position: absolute;
+}
+
+#fountainTextG8{
+width:300px;
+margin: 500px 0px 0px 920px;
 visibility: hidden;
 position: absolute;
 }
@@ -354,7 +383,7 @@ position:absolute;
 width:32px;
 height:11px;
 visibility:hidden;
-margin: -124px 0px 0px 1082px ;
+margin: 407px 0px 0px 1087px;
 }
 
 .escapingBallG{

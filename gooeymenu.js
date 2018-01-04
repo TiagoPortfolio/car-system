@@ -1,9 +1,3 @@
-/* jQuery Gooey Menu
-* Created: April 7th, 2011 by DynamicDrive.com. This notice must stay intact for usage 
-* Author: Dynamic Drive at http://www.dynamicdrive.com/
-* Visit http://www.dynamicdrive.com/ for full source code
-*/
-
 jQuery.noConflict()
 
 jQuery.extend(jQuery.easing, {easeOutBack:function(x, t, b, c, d, s){ //see http://gsgd.co.uk/sandbox/jquery/easing/
